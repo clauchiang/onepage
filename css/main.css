@@ -1,0 +1,177 @@
+.banner {
+    background-image: url(../img/img.png);
+    height: 100vh;
+}
+
+.logo {
+    height: 100%;
+}
+
+/* 選單按鈕 */
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 50;
+    font-size: 23px;
+    width: 35px;
+    height: 35px;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 3px;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.menu:hover {
+    opacity: 0.6;
+}
+
+.sideNav {
+    height: 45vh;
+    min-height: 370px;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 4px gray;
+    opacity: 0.7;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navLogin{
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {
+        padding-top: 15px;
+    }
+
+    .sideNav a {
+        font-size: 18px;
+    }
+}
+
+.navLogo {
+    margin-left: 52px;
+    cursor: pointer;
+}
+
+
+/* 上下滾動按鈕 */
+#topBtn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background-color: lightslategray;
+    opacity: 0.3;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+#topBtn:hover {
+    background-color: lightslategray;
+    opacity: 1;
+}
+
+#bottomBtn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background-color: lightslategray;
+    opacity: 0.3;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+#bottomBtn:hover {
+    background-color: lightslategray;
+    opacity: 1;
+}
+
+.shopCard{
+    top:0;
+    transition: top 0.4s;
+}
+
+.shopCard:hover{
+    top: -20px;
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+
+.catCard{
+    top:0;
+    transition: top 0.4s;
+}
+
+.photo{
+    height: 300px;
+    object-fit: scale-down;
+}
+
+.catCard:hover{
+    top: -20px;
+    box-shadow: 1px 1px 4px gray;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: lavender;
+    color: lightslategray;
+    height: 15vh;
+}
+
+.space{
+    height: 20vh;
+}

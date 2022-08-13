@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛爪子寵物樂園</title>
+    <link rel="icon" href="./img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <button onclick="topFun()" id="topBtn"><i class="fa-solid fa-angle-up" title="Top"></i></button>
+    <button onclick="bottomFun()" id="bottomBtn"><i class="fa-solid fa-angle-down" title="Down"></i></i></button>
+
+    <div class="d-block w-auto banner">
+        <div
+            class="animate__animated animate__fadeInDown animate__slower d-flex justify-content-center align-items-center logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <div class="menu" onclick="openFun()" id="menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeFun()">&times;</a>
+        <div class="navLogo">
+            <img src="./img/navlogo.png" alt="logo" onclick="topFun()">
+        </div>
+        <a href="#introduce">品牌介紹</a>
+        <a href="#item">主打商品</a>
+        <a href="#adopt">愛心領養</a>
+        <a href="#contact">聯絡我們</a>
+        <div class="navLogin">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                登入 &nbsp; <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="acc"><i class="fa-solid fa-user"></i>&nbsp;帳號</label>
+                            <input type="text" class="form-control" id="acc" placeholder="請輸入帳號">
+                        </div>
+                        <div class="form-group">
+                            <label for="pw"><i class="fa-solid fa-key"></i>&nbsp;密碼</label>
+                            <input type="password" class="form-control" id="pw" placeholder="請輸入密碼">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="accCheck">
+                                <label class="form-check-label" for="accCheck">
+                                    記住我
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <a class="dropdown-item" href="#">尚未註冊?</a>
+                    <a class="dropdown-item" href="#">忘記密碼?</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="mt-3 container introduce">
+        <h1 id="introduce" class="mx-auto mt-3 text-center">品牌介紹</h1>
+        <div class="container mt-4">
+            <blockquote class="blockquote text-center wow animate__animated animate__fadeIn">
+                <p class="mb-0">毛爪子寵物樂園創立於2022年<br>致力於提供給每個毛孩子最好的商品</p>
+                <footer class="blockquote-footer">毛爪子寵物樂園&nbsp;<i class="fa-solid fa-paw"></i></footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="container mt-4">
+        <h1 id="item" class="mx-auto mt-4 text-center">主打商品</h1>
+        <div class="row row-cols-1 row-cols-md-3 mt-4">
+            <div class="col mb-4 wow animate__animated animate__rubberBand ">
+                <div class="card shopCard" data-toggle="modal" data-target="#itemModal1">
+                    <img src="./img/item1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">貓爪揉捏按摩器</h5>
+                        <p class="card-text">柔軟矽膠幫你的寶貝溫柔的馬殺雞</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 wow animate__animated animate__rubberBand ">
+                <div class="card shopCard" data-toggle="modal" data-target="#itemModal2">
+                    <img src="./img/item2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">貓抓板</h5>
+                        <p class="card-text">左抓、右抓，貓咪磨爪好開心</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 wow animate__animated animate__rubberBand ">
+                <div class="card shopCard" data-toggle="modal" data-target="#itemModal3">
+                    <img src="./img/item3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">貓吊床觀景台</h5>
+                        <p class="card-text">好看耐用，用過都說讚</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 wow animate__animated animate__rubberBand ">
+                <div class="card shopCard" data-toggle="modal" data-target="#itemModal4">
+                    <img src="./img/item4.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">海豹冰絲貓窩</h5>
+                        <p class="card-text">冰絲材質涼感透氣</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 wow animate__animated animate__rubberBand ">
+                <div class="card shopCard" data-toggle="modal" data-target="#itemModal5">
+                    <img src="./img/item5.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">蘿蔔麻繩貓抓板</h5>
+                        <p class="card-text">耐磨耐用，讓寶貝忍不住一直抓</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 wow animate__animated animate__rubberBand ">
+                <div class="card shopCard" data-toggle="modal" data-target="#itemModal6">
+                    <img src="./img/item6.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">可折疊拉桿外出包 寵物推車</h5>
+                        <p class="card-text">輕鬆出門，寶貝再重也不怕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="itemModal1" tabindex="-1" aria-labelledby="itemModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="hidden" id="itemLabel1" value="貓爪揉捏按摩器">
+                    <h5 class="modal-title" id="itemModalLabel1">貓爪揉捏按摩器</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    『商品資訊』<br>
+                    ・商品：貓爪揉捏按摩器<br>
+                    ・樣式：粉、藍<br>
+                    ・尺寸：長10.7x寬9.3x高8.5 (單位cm)<br>
+                    ・材質：硅膠、電子元件<br>
+                    ・功率/電壓：5W / 5V<br>
+                    ・充電時間：電池容量&充電時間：1250MAH，充滿大約3小時<br>
+                    ・重量：約245g<br>
+                    ・續航：每天20分鐘，約可使用1~2周<br>
+                    ・注意事項：長按貓咪鼻頭3秒開關機，短按一次切換模式。眼睛氛圍呼吸燈使用時閃白燈，充電時閃紅燈。<br>
+                    整機防水，洗頭時可以搭配錐形觸頭按摩頭皮，但使用完建議擦乾。整機防水，但使用完必須擦乾<br>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="itemSelect01">數量</label>
+                            </div>
+                            <select class="custom-select mr-2" id="itemSelect01" >
+                                <option selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="styleSelect01">樣式</label>
+                            </div>
+                            <select class="custom-select" id="styleSelect01">
+                                <option selected></option>
+                                <option value="粉色">粉色</option>
+                                <option value="藍色">藍色</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info" onclick="shopFun1()">加入購物車&nbsp;<i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="itemModal2" tabindex="-1" aria-labelledby="itemModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="hidden" id="itemLabel2" value="貓抓板">
+                    <h5 class="modal-title" id="itemModalLabel2">貓抓板</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    『商品資訊』<br>
+                    ・商品：沙發椅貓抓<br>
+                    ・樣式：鈴鐺球沙發、咖啡靠背沙發、豹紋靠背沙發、招財貓靠背沙發、鋼琴型靠背沙發<br>
+                    ・尺寸：咖啡靠背沙發、豹紋靠背沙發、招財貓靠背沙發長60.5x寬28x高14cm、鈴鐺球長60.5x寬25.5x高9.5cm、鋼琴長60.5x寬28x高14cm <br>
+                    ・材質：1.瓦楞紙 2.鈴鐺球:塑膠、鐵<br>
+                    ・特別說明：適合6公斤以下的貓咪可以拼在一起供多貓使用<br>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="iitemSelect02">數量</label>
+                            </div>
+                            <select class="custom-select mr-2" id="itemSelect02">
+                                <option selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="styleSelect02">樣式</label>
+                            </div>
+                            <select class="custom-select" id="styleSelect02">
+                                <option selected></option>
+                                <option value="鈴鐺球沙發">鈴鐺球沙發</option>
+                                <option value="咖啡靠背沙發">咖啡靠背沙發</option>
+                                <option value="豹紋靠背沙發">豹紋靠背沙發</option>
+                                <option value="招財貓靠背沙發">招財貓靠背沙發</option>
+                                <option value="鋼琴型靠背沙發">鋼琴型靠背沙發</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info" onclick="shopFun2()">加入購物車&nbsp;<i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="itemModal3" tabindex="-1" aria-labelledby="itemModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="hidden" id="itemLabel3" value="貓吊床觀景台">
+                    <h5 class="modal-title" id="itemModalLabel3">貓吊床觀景台</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    『商品資訊』<br>
+                    ・商品：貓咪窗台吊床<br>
+                    ・樣式： 黑色<br>
+                    ・尺寸：高67x寬40cm<br>
+                    ・材質：pvc<br>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="itemSelect03">數量</label>
+                            </div>
+                            <select class="custom-select mr-2" id="itemSelect03">
+                                <option selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="styleSelect03">樣式</label>
+                            </div>
+                            <select class="custom-select" id="styleSelect03">
+                                <option selected></option>
+                                <option value="黑色">黑色</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info" onclick="shopFun3()">加入購物車&nbsp;<i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="itemModal4" tabindex="-1" aria-labelledby="itemModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="hidden" id="itemLabel4" value="海豹冰絲貓窩">
+                    <h5 class="modal-title" id="itemModalLabel4">海豹冰絲貓窩</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    『商品資訊』<br>
+                    ・商品：海豹冰絲貓窩<br>
+                    ・樣式：F<br>
+                    ・尺寸(單位cm)：長68x寬40x高20<br>
+                    ・重量(單位kg)：0.775<br>
+                    ・材質：100%尼龍面料、100%聚酯纖維PP棉填充材料<br>
+                    ・備註：此貓窩一體縫製成形，日常清潔可用吸塵器吸除表面毛屑，或用濕毛巾輕擦表面污漬。亦可手洗擰乾晾曬即可，請勿機洗、乾洗、漂白、熨燙、烘乾，避免造成產品毀損。<br>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="itemSelect04">數量</label>
+                            </div>
+                            <select class="custom-select mr-2" id="itemSelect04">
+                                <option selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="styleSelect04">樣式</label>
+                            </div>
+                            <select class="custom-select" id="styleSelect04">
+                                <option selected></option>
+                                <option value="F">F</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info" onclick="shopFun4()">加入購物車&nbsp;<i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="itemModal5" tabindex="-1" aria-labelledby="itemModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="hidden" id="itemLabel5" value="蘿蔔麻繩貓抓板">
+                    <h5 class="modal-title" id="itemModalLabel5">蘿蔔麻繩貓抓板</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    『商品資訊』<br>
+                    ・商品：蘿蔔麻繩貓抓板<br>
+                    ・樣式：紅蘿蔔(大)、紅蘿蔔(中)<br>
+                    ・尺寸(單位cm)：<br>
+                    紅蘿蔔(大)長30x寬30X高43、紅蘿蔔(小)長25x寬25X高29<br>
+                    ・材質：劍麻繩、毛絨、PV草皮、複合板、五金<br>
+                    ・備註：生產或運送過程中難免會有碎屑產生，如有發現碎屑稍作擦拭清理即可，不影響使用喔。<br>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="itemSelect05">數量</label>
+                            </div>
+                            <select class="custom-select mr-2" id="itemSelect05">
+                                <option selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="styleSelect05">樣式</label>
+                            </div>
+                            <select class="custom-select" id="styleSelect05">
+                                <option selected></option>
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info" onclick="shopFun5()">加入購物車&nbsp;<i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="itemModal6" tabindex="-1" aria-labelledby="itemModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input type="hidden" id="itemLabel6" value="可折疊拉桿外出包 寵物推車">
+                    <h5 class="modal-title" id="itemModalLabel6">可折疊拉桿外出包 寵物推車</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    『商品資訊』<br>
+                    ・商品：寵物外出拉桿背包<br>
+                    ・樣式：淺灰、深灰、卡其<br>
+                    ・尺寸：背包長32cm*寬26cm*高49cm，拉桿拉直長97cm，
+                    背包折疊後長52cm*寬37cm*厚10cm。<br>
+                    ・材質：尼龍、塑料、金屬<br>
+                    ・重量：背包+拉桿+輪子 2.4KG (可容納10公斤以內的貓)<br>
+                    <div class="d-flex justify-content-start mt-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="itemSelect06">數量</label>
+                            </div>
+                            <select class="custom-select mr-2" id="itemSelect06">
+                                <option selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="styleSelect06">樣式</label>
+                            </div>
+                            <select class="custom-select" id="styleSelect06">
+                                <option selected></option>
+                                <option value="淺灰色">淺灰色</option>
+                                <option value="深灰色">深灰色</option>
+                                <option value="卡其色">卡其色</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-info" onclick="shopFun6()">加入購物車&nbsp;<i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <button type="button" class="btn btn-success btn-lg mt-4">看更多商品&nbsp;&nbsp;<i
+                class="fa-solid fa-bag-shopping"></i></button>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="container">
+        <h1 id="adopt" class="mx-auto mt-4 text-center">愛心領養</h1>
+
+        <div class="container mt-4 mb-4 text-center">
+            <button type="button" class="btn btn-dark" id="cat1">0~1000</button>
+            <button type="button" class="btn btn-dark" id="cat2">1001~2000</button>
+            <button type="button" class="btn btn-dark" id="cat3">2001~3000</button>
+            <button type="button" class="btn btn-dark" id="cat4">3001~4000</button>
+            <button type="button" class="btn btn-dark" id="cat5">4001~5000</button>
+            <button type="button" class="btn btn-dark" id="cat6">5001~6000</button>
+            <button type="button" class="btn btn-dark" id="cat7">6001~7000</button>
+        </div>
+
+        <div class="container mt-4">
+            <div id="adoptCard" class="row row-cols-1 row-cols-md-3 mt-4">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="detail">
+
+    </div>
+
+
+    <h1 id="contact" class="mx-auto mt-4 text-center">聯絡我們</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.814597305804!2d121.4195156!3d25.0441293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1659457787934!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+            </div>
+            <div class="col-5 contactForm shadow p-3 mb-5 bg-white rounded">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault01">姓名</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault02">稱呼</label>
+                            <input type="text" class="form-control" id="validationDefault02" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validationDefault05">電子信箱</label>
+                            <input type="email" class="form-control" id="validationDefault03" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">電話</label>
+                            <input type="number" class="form-control" id="validationDefault04" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault04">您想反應的意見類別</label>
+                            <select class="custom-select" id="validationDefault05" required>
+                                <option selected disabled value="">...</option>
+                                <option>商品</option>
+                                <option>服務</option>
+                                <option>合作</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validationDefault05">意見</label>
+                            <textarea type="text" class="form-control" id="validationDefault06" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                同意讓本公司蒐集、利用您填寫的個人資料
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary mr-3" type="reset">取消 &nbsp;<i
+                            class="fa-solid fa-eraser"></i></button>
+                    <button class="btn btn-primary" type="submit">送出 &nbsp;<i class="fa-solid fa-pen-nib"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-4 d-flex justify-content-center align-items-center">
+        <div class="mt-4 text-center">毛爪子寵物樂園<i class="fa-solid fa-paw"></i> © 2022 泰山股份有限公司</div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.18/dist/sweetalert2.all.min.js"></script>
+
+    <script src="./js/top.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/shop.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
