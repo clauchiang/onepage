@@ -34,7 +34,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -72,7 +72,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -124,7 +124,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -162,7 +162,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -215,7 +215,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -253,7 +253,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -306,7 +306,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -344,7 +344,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -397,7 +397,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -435,7 +435,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -488,7 +488,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -526,7 +526,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -579,7 +579,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -617,7 +617,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -670,7 +670,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;
@@ -708,7 +708,7 @@ $(document).ready(function () {
                                         <div class="card-body">
                                         <h5 class="card-title">no.&nbsp;${index}</h5>
                                         <p class="card-text">品種:&nbsp;${item.animal_Variety}</p>
-                                        <p class="card-text">毛色:&nbsp;${item.animal_colour}</p>
+                                        <p class="card-text">地區:&nbsp;${item.shelter_address.slice(0,3)}</p>
                                         </div>
                                     </div>                                            
                             </div>`;

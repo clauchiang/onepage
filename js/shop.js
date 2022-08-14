@@ -27,6 +27,7 @@ function shopFun1() {
         '',
         'success'
     )
+    $("select").val("");
 }
 function shopFun2() {
     Swal.fire(
@@ -34,6 +35,7 @@ function shopFun2() {
         '',
         'success'
     )
+    $("select").val("");
 }
 function shopFun3() {
     Swal.fire(
@@ -41,6 +43,7 @@ function shopFun3() {
         '',
         'success'
     )
+    $("select").val("");
 }
 function shopFun4() {
     Swal.fire(
@@ -48,6 +51,7 @@ function shopFun4() {
         '',
         'success'
     )
+    $("select").val("");
 }
 function shopFun5() {
     Swal.fire(
@@ -55,6 +59,7 @@ function shopFun5() {
         '',
         'success'
     )
+    $("select").val("");
 }
 function shopFun6() {
     Swal.fire(
@@ -62,4 +67,9 @@ function shopFun6() {
         '',
         'success'
     )
+    $("select").val("");
+}
+
+function resetFun(){
+    $("select").val("");
 }
