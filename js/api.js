@@ -18,9 +18,9 @@ $(document).ready(function () {
                     item.animal_Variety = "米克斯"
                 }
                 if(item.animal_sex == "F"){
-                    item.animal_sex = "母";
+                    item.animal_sex = "母&nbsp;<i class='fa-solid fa-venus'></i>";
                 }else{
-                    item.animal_sex = "公";
+                    item.animal_sex = "公&nbsp;<i class='fa-solid fa-mars'></i>";
                 }
                 
                 if (item.animal_kind == "貓" && index < 1000)
@@ -46,7 +46,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -84,7 +84,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -136,7 +136,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -174,7 +174,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -227,7 +227,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -265,7 +265,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -318,7 +318,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -356,7 +356,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -409,7 +409,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -447,7 +447,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -500,7 +500,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -538,7 +538,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -591,7 +591,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4">
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -629,7 +629,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -682,7 +682,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
@@ -720,7 +720,7 @@ $(document).ready(function () {
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">編號:&nbsp;${item.animal_subid}</h5>
                                             </div>
-                                            <div class="modal-body" >
+                                            <div class="modal-body px-4" >
                                                 <p>品種:&nbsp;${item.animal_Variety}</p>
                                                 <p>毛色:&nbsp;${item.animal_colour}</p>
                                                 <p>性別:&nbsp;${item.animal_sex}</p>
