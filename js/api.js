@@ -53,6 +53,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -143,6 +144,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -234,6 +236,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -325,6 +328,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -416,6 +420,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -507,6 +512,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -598,6 +604,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
@@ -689,6 +696,7 @@ $(document).ready(function () {
                                                 <p>認養地點:&nbsp;${item.shelter_name}</p>
                                                 <p>地址:&nbsp;${item.shelter_address}</p>
                                                 <p>電話:&nbsp;${item.shelter_tel}</p>
+                                                <p><a href='${item.album_file}' target='_blank'>點擊看大圖&nbsp;<i class='fa-solid fa-arrow-up-right-from-square'></i></a></p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
