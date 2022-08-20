@@ -34,4 +34,3 @@
 
 ## 繳交方式
 完整代碼上傳 Github ClassRoom 至指定 repository，並於說明欄位提供 個人 GitPage 之預覽連結:<br>
-https://github.com/wdaweb/WebFrontEnd-Final-clauchiang.git
