@@ -70,6 +70,12 @@ function shopFun6() {
     $("select").val("");
 }
 
-function resetFun(){
+function resetFun() {
     $("select").val("");
 }
+
+let num = 0;
+$(".buy").on("click", function () {
+    num += 1;
+    $('#car').html(" ( " + num + " )");
+})

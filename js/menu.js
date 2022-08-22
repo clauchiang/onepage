@@ -1,7 +1,7 @@
 const menu =document.getElementById('menu');
 
 function openFun() {
-    document.getElementById("sideNav").style.width = "200px";
+    document.getElementById("sideNav").style.width = "210px";
     menu.style.display = "none";
   }
   
